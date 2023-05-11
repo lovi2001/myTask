@@ -1,0 +1,53 @@
+.tbl-container {
+  max-width: min-content;
+  max-height: min-content;
+}
+
+.tbl-sticky {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  height: min-content;
+  max-height: 100vh;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  min-width: max-content;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  column-width: 150px;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #0476aa;
+  color: white;
+  position: sticky;
+  top: 0px;
+}
+
+td:first-child,
+th:first-child {
+  position: sticky;
+  left: 0px;
+  z-index: 1  ;
+  width: 70px;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+  position: sticky;
+  left: 90px;
+  z-index: 1;
+  width: 100px;
+}
+th:first-child, th:nth-child(2){
+  z-index: 3;
+}
